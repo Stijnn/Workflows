@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get '/:username' => 'pages#profile';
+  get '/search/:username' => 'pages#search'
 end

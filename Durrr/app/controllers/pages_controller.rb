@@ -8,4 +8,8 @@ class PagesController < ApplicationController
       redirect_to root_path
     end
   end
+
+  def search
+    @users = User.find_by_character(params[:username])
+  end
 end
