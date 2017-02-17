@@ -1,5 +1,11 @@
 <div id="myCarousel" class="carousel container slide">
   <div class="carousel-inner">
-    <div class="active item one"></div>
+    <% if current_page?(root_path) %>
+      <div class="active item mainpage"></div>
+    <% elsif current_page? ('/users/sign_in') %>
+      <div class="active item deviselogin"></div>
+    <% elsif current_page? ('/users/sign_up') %>
+      <div class="active item devisesignup"></div>
+    <% end %>
   </div>
 </div>

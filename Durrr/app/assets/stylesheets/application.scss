@@ -42,8 +42,21 @@
     -ms-filter: blur(5px);
     filter: blur(5px);
 }
-.carousel .one {
+
+.carousel .mainpage {
     background: url('https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel .deviselogin {
+    background: url('http://bestanimations.com/Earth&Space/astronaut-animation.gif');
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+.carousel .devisesignup {
+    background: url('https://d13yacurqjgara.cloudfront.net/users/165025/screenshots/2922036/spaceships-in-space.gif');
     background-size: cover;
     -moz-background-size: cover;
 }
