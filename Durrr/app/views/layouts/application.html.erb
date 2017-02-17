@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Durrr</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+  <body>
+    <div>
+      <%= render 'layouts/sidebar' %>
+    </div>
+  </body>
+</html>
+
+<style>
+   body
+   {
+     background: #1c1c1c !important;
+   } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
