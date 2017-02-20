@@ -1,30 +1,22 @@
-<div id="backgroundGradient">
-  <div class="jumbotron text-center">
-    <h1><%= @user.username %></h1>
-    <div inline-block class="container">
-      <h2><span>Likes</span></h2>
-      <span><h2>Followers</h2></span>
-      <span><h2>Following</h2></span>
-    </div>
-    <p>Motto Here</p>
+<%= render 'pages/carouselBackground' %>
+
+<div class="jumbotron text-center">
+  <h1><%= @user.username %></h1>
+  <div inline-block class="container">
+    <h2><span>Likes</span></h2>
+    <span><h2>Followers</h2></span>
+    <span><h2>Following</h2></span>
   </div>
+  <p>Motto Here</p>
+</div>
 
-  <div class="content-wrapper">
-    <div class="jumbotron text-center">
+<div class="content-wrapper">
+  <div class="jumbotron text-center">
 
-    </div>
   </div>
 </div>
 
 <style>
-  #backgroundGradient  {
-      background: red; /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(left top, red, orange); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(bottom right, red, orange); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(bottom right, red, orange); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(to bottom right, red, orange); /* Standard syntax (must be last) */
-  }
-
   .content-wrapper {
     margin-top: -25px;
   }
